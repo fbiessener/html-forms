@@ -14,9 +14,12 @@
 
     <h2>Melon Options</h2>
 
-    <p>Choose from one of these melons:</p>
-
     <table>
+      <thead>
+        <tr>
+          <th colspan="2">Choose from one of these melons:</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
           <td>Watermelon</td> 
@@ -39,10 +42,21 @@
 
     <form>
       
-      Your name <input type = "text" name = "name">
-      <p>Who are we sending this to? <input type = "text" name = "recipient"></p>
+      <label for = "name">
+        Your name
+      </label> 
+      <input type = "text" name = "name">
 
-      Choose a melon
+      <p>
+        <label for = "recipient">
+          Who are we sending this to?
+        </label> 
+        <input type = "text" name = "recipient">
+      </p>
+
+      <label for = "melon">
+        Choose a melon
+      </label>
       <select name = "melon">
         <option value = "watermelon">Watermleon</option>
         <option value = "canteloupe">Canteloupe</option>
@@ -50,7 +64,9 @@
       </select>
 
       <p>
-        When should we deliver?
+        <label for = "time">
+          When should we deliver?
+        </label>
         <input type = "radio" name = "time" value = "am">
         <label>Morning</label>
         <input type = "radio" name = "time" value = "pm">
@@ -59,11 +75,15 @@
         <label>Any time</label>
       </p>
 
-      Enter your message:
+      <label for = "message">
+        Enter your message:
+      </label>
       <textarea name = "message"></textarea>
 
       <p>
-        Subscribe to our newsletter
+        <label for = "subscribe">
+          Subscribe to our newsletter
+        </label>
         <input type = "checkbox" name = "subscribe" value = "yes">
         <label>Yes</label>
       </p>
